@@ -32,3 +32,11 @@ concept of letting an LLM have access to your shell is really terrible. And
 this is a **security** course.
 
 I refuse to use it.
+
+## Hard disk problems
+
+One of my docker volume (database for ONE project) reach nearly 100 GiB. This
+Dell laptop that Zigexn provides me does not have enough spaces for me to
+confidently install another 3 VMs, especially one of them is a windows. I can
+re-flesh my database and reduce the volume to less than 60 GiB, but this
+requires the whole next Saturday of mine.

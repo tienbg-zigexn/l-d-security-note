@@ -5,6 +5,8 @@
   - [Terminologies](#terminologies)
   - [Threat actors](#threat-actors)
   - [What matters to threat actors](#what-matters-to-threat-actors)
+  - [Penetration testing](#penetration-testing)
+  - [Penetration testing methodologies](#penetration-testing-methodologies)
 <!--toc:end-->
 
 The author of this book is just teaching and writing books. He does not do

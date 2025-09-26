@@ -178,3 +178,12 @@ Deliver step.
 Reports have to be good, easy to understand for both technical and
 non-technical customers. Illustrate the potential business impacts is
 important. (MONEY)
+
+## Penetration testing approaches
+
+White box: Full information is provided.
+
+Black box: Little or no information at all, except the name of the target.
+
+Gray box: The customer wants blackbox but also wants to reduce time conduct
+reconnaissance, so they try to give 'enough' information.

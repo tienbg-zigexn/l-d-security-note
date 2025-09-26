@@ -5,7 +5,7 @@ real works. I am getting a hard time convince myself to read.
 
 ## Terminologies
 
-Asset: Anything that has values.
+- Asset: Anything that has values.
     - Tangible: physical object: servers, computers, network devices, etc.
     - Intangible: plan, data, softwares, intellectual properties, etc.
     - People: customers, employees, personal identity information, etc.

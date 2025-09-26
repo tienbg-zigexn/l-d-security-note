@@ -1,5 +1,14 @@
 # The security course from Zigexn L&D team
 
+<!--toc:start-->
+- [The security course from Zigexn L&D team](#the-security-course-from-zigexn-ld-team)
+  - [Other notes](#other-notes)
+  - [Structure](#structure)
+  - [Hacking lab](#hacking-lab)
+  - [On warp terminal](#on-warp-terminal)
+  - [Hard disk problems](#hard-disk-problems)
+<!--toc:end-->
+
 ## Other notes
 
 [Note when reading the book](./reading_book.md)

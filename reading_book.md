@@ -1,5 +1,11 @@
 # Note when reading the book
 
+<!--toc:start-->
+- [Note when reading the book](#note-when-reading-the-book)
+  - [Terminologies](#terminologies)
+  - [Threat actors](#threat-actors)
+<!--toc:end-->
+
 The author of this book is just teaching and writing books. He does not do
 real works. I am getting a hard time convince myself to read.
 

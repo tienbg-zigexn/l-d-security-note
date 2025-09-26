@@ -47,5 +47,36 @@ I refuse to use it.
 One of my docker volume (database for ONE project) reach nearly 100 GiB. This
 Dell laptop that Zigexn provides me does not have enough spaces for me to
 confidently install another 3 VMs, especially one of them is a windows. I can
-re-flesh my database and reduce the volume to less than 60 GiB, but this
+re-fresh my database and reduce the volume to less than 60 GiB, but this
 requires the whole next Saturday of mine.
+
+After rebuild my database my machine still does not have enough spaces left to
+install these VMs. The Windows 11 requires at least 64GiB. I only have total
+50GiB left.
+
+    df -h
+
+```
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           1.6G  2.0M  1.6G   1% /run
+efivarfs        374K  239K  131K  65% /sys/firmware/efi/efivars
+/dev/nvme0n1p2  233G  172G   50G  78% /
+tmpfs           7.7G  1.9M  7.7G   1% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+tmpfs           7.7G   64K  7.7G   1% /tmp
+/dev/nvme0n1p1  1.1G   22M  1.1G   3% /boot/efi
+tmpfs           1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           1.6G   72K  1.6G   1% /run/user/1000
+```
+
+    docker system df
+
+```
+TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
+Images          17        14        8.764GB   3.591GB (40%)
+Containers      17        0         368.9MB   368.9MB (100%)
+Local Volumes   15        15        71.02GB   0B (0%)
+Build Cache     222       0         6.605GB   6.605GB
+```

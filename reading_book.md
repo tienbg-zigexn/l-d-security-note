@@ -6,7 +6,7 @@ real works. I am getting a hard time convince myself to read.
 ## Terminologies
 
 - Asset: Anything that has values.
-    - Tangible: physical object: servers, computers, network devices, etc.
+    - Tangible: servers, computers, network devices, etc.
     - Intangible: plan, data, softwares, intellectual properties, etc.
     - People: customers, employees, personal identity information, etc.
     - Threat: anything that has potentials to cause harm, damage to a asset.
@@ -31,7 +31,7 @@ real works. I am getting a hard time convince myself to read.
     - Risk: the potential impact or the likelihood of an attack, threat,
       vulnerability.
     - Attack surface: vulnerable *entry* points.
-    - **Zero-day**: a security vulnerability that the vendor haven't aware or
+    - **Zero-day**: a security vulnerability that the vendor hasn't aware or
       developed a patch.
 
 (I just notice that the author is using a lot of empty words. We can remove a

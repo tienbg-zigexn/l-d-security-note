@@ -4,6 +4,7 @@
 - [Note when reading the book](#note-when-reading-the-book)
   - [Terminologies](#terminologies)
   - [Threat actors](#threat-actors)
+  - [What matters to threat actors](#what-matters-to-threat-actors)
 <!--toc:end-->
 
 The author of this book is just teaching and writing books. He does not do
@@ -72,3 +73,33 @@ Black hat: Malicious goals.
 White hat: Help people.
 
 Gray hat: (Mr. Robot)
+
+## What matters to threat actors
+
+Time - Resources - Financial - Hack value
+
+These factors can affect the worthwhile of a hack.
+
+## Penetration testing
+
+Organizations or companies hire these people to simulate real-world
+cyber-attacks to discover and exploit hidden vulnerabilities.
+
+After these works, the penetration testers will report detailing all the
+findings, recommendations on how to mitigate and prevent.
+
+## Penetration testing methodologies
+
+We have some common methodologies/frameworks. Each can be used for different
+kind of organizations, companies based on their industry, business.
+
+- Penetration Testing Execution Standard (PTES)
+- Payment Card Industry Data Security Standard (PCI DSS)
+- Penetration Testing Framework (PTF)
+- Technical Guide to Information Security Testing and Assessment
+- Open Source Security Testing Methodology Manual
+- OWASP Web Security Testing Guide
+- OWASP Mobile Security Testing Guide
+- OWASP Firmware Security Testing Methodology
+
+This book will focus more on PTES as this can be applied to many scenarios.

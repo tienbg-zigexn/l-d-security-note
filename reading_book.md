@@ -2,19 +2,21 @@
 
 <!--toc:start-->
 - [Note when reading the book](#note-when-reading-the-book)
-  - [Terminologies](#terminologies)
-  - [Threat actors](#threat-actors)
-  - [What matters to threat actors](#what-matters-to-threat-actors)
-  - [Penetration testing](#penetration-testing)
-  - [Penetration testing methodologies](#penetration-testing-methodologies)
-    - [Pre-engagement phase](#pre-engagement-phase)
-    - [Information gathering phase](#information-gathering-phase)
-    - [Threat modeling](#threat-modeling)
-    - [Vulnerability analysis](#vulnerability-analysis)
-    - [Exploitation](#exploitation)
-    - [Post-exploitation](#post-exploitation)
-    - [Report writing](#report-writing)
-  - [Penetration testing approaches](#penetration-testing-approaches)
+  - [Chapter 1: Introduction to Ethical Hacking](#chapter-1-introduction-to-ethical-hacking)
+    - [Terminologies](#terminologies)
+    - [Threat actors](#threat-actors)
+    - [What matters to threat actors](#what-matters-to-threat-actors)
+    - [Penetration testing](#penetration-testing)
+    - [Penetration testing methodologies](#penetration-testing-methodologies)
+      - [Pre-engagement phase](#pre-engagement-phase)
+      - [Information gathering phase](#information-gathering-phase)
+      - [Threat modeling](#threat-modeling)
+      - [Vulnerability analysis](#vulnerability-analysis)
+      - [Exploitation](#exploitation)
+      - [Post-exploitation](#post-exploitation)
+      - [Report writing](#report-writing)
+    - [Penetration testing approaches](#penetration-testing-approaches)
+    - [Types of penetration testing](#types-of-penetration-testing)
 <!--toc:end-->
 
 The author of this book is just teaching and writing books. He does not do
@@ -22,7 +24,9 @@ real works. I am getting a hard time convince myself to read.
 
 I read the third edition by the way, not the second.
 
-## Terminologies
+## Chapter 1: Introduction to Ethical Hacking
+
+### Terminologies
 
 Asset: Anything that has values. Categories:
 
@@ -57,7 +61,7 @@ Asset: Anything that has values. Categories:
 (I just notice that the author is using a lot of empty words. We can remove a
 bunch of paragraphs without losing any meaning.)
 
-## Threat actors
+### Threat actors
 
 Script kiddie: Someone who does not fully understand the technical details of
 cybersecurity to perform or develop a threat on their own. They are not
@@ -84,13 +88,13 @@ White hat: Help people.
 
 Gray hat: (Mr. Robot)
 
-## What matters to threat actors
+### What matters to threat actors
 
 Time - Resources - Financial - Hack value
 
 These factors can affect the worthwhile of a hack.
 
-## Penetration testing
+### Penetration testing
 
 Organizations or companies hire these people to simulate real-world
 cyber-attacks to discover and exploit hidden vulnerabilities.
@@ -98,7 +102,7 @@ cyber-attacks to discover and exploit hidden vulnerabilities.
 After these works, the penetration testers will report detailing all the
 findings, recommendations on how to mitigate and prevent.
 
-## Penetration testing methodologies
+### Penetration testing methodologies
 
 We have some common methodologies/frameworks. Each can be used for different
 kind of organizations, companies based on their industry, business.
@@ -114,7 +118,7 @@ kind of organizations, companies based on their industry, business.
 
 This book will focus more on PTES as this can be applied to many scenarios.
 
-### Pre-engagement phase
+#### Pre-engagement phase
 
 The penetration testers and the customers setup legal boundaries. What to
 touch, what not, which tools, etc.
@@ -127,7 +131,7 @@ I can call this the legal phase and scope settings.
 For the penetration testers, they will have to understand the scope of a
 penetration test in order to stay within the constraints.
 
-### Information gathering phase
+#### Information gathering phase
 
 Understand the target is super important before running any type of attacks.
 
@@ -135,21 +139,21 @@ Pros will spend 1-2 days just for gathering information, build profile about
 target, identify attack surface, and determine which types of attacks are most
 effective.
 
-### Threat modeling
+#### Threat modeling
 
 There are standard, common models like `STRIDE` and `PASTA`.
 
 I have nothing to say about this. These are just methods, or would I say, the
 ways to approach a problem.
 
-### Vulnerability analysis
+#### Vulnerability analysis
 
 Hacker or penetration tester finds vulnerabilities both automatedly and
 manually.
 
 Analysis helps decision-makers determine priorities.
 
-### Exploitation
+#### Exploitation
 
 <!-- Haiz, this start to feel like homeworks. -->
 <!-- Writing is fine, I love writing, but I also love to write what I want to
@@ -161,7 +165,7 @@ The penetration testers do their research, create specific exploits that take
 advantages of vulnerabilities of the system. They will now breaking into the
 system.
 
-### Post-exploitation
+#### Post-exploitation
 
 This literally demonstrates the impact that the vulnerability and access gained
 can pose to the targeted organization.
@@ -172,7 +176,7 @@ backdoors, C2, etc.
 Good demonstrations help leadership, decision-makers better understand the
 risks.
 
-### Report writing
+#### Report writing
 
 Deliver step.
 
@@ -180,7 +184,7 @@ Reports have to be good, easy to understand for both technical and
 non-technical customers. Illustrate the potential business impacts is
 important. (MONEY)
 
-## Penetration testing approaches
+### Penetration testing approaches
 
 White box: Full information is provided.
 
@@ -188,3 +192,15 @@ Black box: Little or no information at all, except the name of the target.
 
 Gray box: The customer wants blackbox but also wants to reduce time conduct
 reconnaissance, so they try to give 'enough' information.
+
+### Types of penetration testing
+
+(I see that these people really like acronyms. They come up with a long ass
+name then create a acronym for it.)
+
+- Web application
+- Mobile application
+- Social engineering
+- Network (external & internal)
+- Cloud
+- Physical

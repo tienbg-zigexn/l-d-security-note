@@ -3,6 +3,8 @@
 The author of this book is just teaching and writing books. He does not do
 real works. I am getting a hard time convince myself to read.
 
+I read the third edition by the way, not the second.
+
 ## Terminologies
 
 - Asset: Anything that has values.

@@ -105,3 +105,69 @@ kind of organizations, companies based on their industry, business.
 - OWASP Firmware Security Testing Methodology
 
 This book will focus more on PTES as this can be applied to many scenarios.
+
+### Pre-engagement phase
+
+The penetration testers and the customers setup legal boundaries. What to
+touch, what not, which tools, etc.
+
+Some legal agreements that force the service provider (penetration testing)
+about credentials, proprietary informations.
+
+I can call this the legal phase and scope settings.
+
+For the penetration testers, they will have to understand the scope of a
+penetration test in order to stay within the constraints.
+
+### Information gathering phase
+
+Understand the target is super important before running any type of attacks.
+
+Pros will spend 1-2 days just for gathering information, build profile about
+target, identify attack surface, and determine which types of attacks are most
+effective.
+
+### Threat modeling
+
+There are standard, common models like `STRIDE` and `PASTA`.
+
+I have nothing to say about this. These are just methods, or would I say, the
+ways to approach a problem.
+
+### Vulnerability analysis
+
+Hacker or penetration tester finds vulnerabilities both automatedly and
+manually.
+
+Analysis helps decision-makers determine priorities.
+
+### Exploitation
+
+<!-- Haiz, this start to feel like homework. -->
+<!-- Writing is fine, I love writing, but I also love to write what I want to
+write only. Because we are doing this course from my company, I have to provide
+some evidence of reading, studying. Some sections I would just skim over if I
+don't have to write about everything. -->
+
+The penetration testers do their research, create specific exploits that take
+advantages of vulnerabilities of the system. They will now breaking into the
+system.
+
+### Post-exploitation
+
+This literally demonstrates the impact that the vulnerability and access gained
+can pose to the targeted organization.
+
+The hackers, penetration testers try to effect more on the network, setup
+backdoors, C2, etc.
+
+Good demonstrations help leadership, decision-makers better understand the
+risks.
+
+### Report writing
+
+Deliver step.
+
+Reports have to be good, easy to understand for both technical and
+non-technical customers. Illustrate the potential business impacts is
+important. (MONEY)

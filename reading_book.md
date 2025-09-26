@@ -150,7 +150,7 @@ Analysis helps decision-makers determine priorities.
 
 ### Exploitation
 
-<!-- Haiz, this start to feel like homework. -->
+<!-- Haiz, this start to feel like homeworks. -->
 <!-- Writing is fine, I love writing, but I also love to write what I want to
 write only. Because we are doing this course from my company, I have to provide
 some evidence of reading, studying. Some sections I would just skim over if I

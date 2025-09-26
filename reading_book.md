@@ -1,13 +1,13 @@
 # Note when reading the book
 
-The author of this book is just teaching and writting books. He does not do
+The author of this book is just teaching and writing books. He does not do
 real works. I am getting a hard time convince myself to read.
 
 ## Terminologies
 
 - Asset: Anything that has values.
     - Tangible: servers, computers, network devices, etc.
-    - Intangible: plan, data, softwares, intellectual properties, etc.
+    - Intangible: plan, data, software, intellectual properties, etc.
     - People: customers, employees, personal identity information, etc.
     - Threat: anything that has potentials to cause harm, damage to a asset.
     - Vulnerability: security weaknesses or flaw in the system (most
@@ -26,7 +26,7 @@ real works. I am getting a hard time convince myself to read.
             incident shows me how bad the node modules or node ecosystem is,
             and auto update is a terrible thing.)
         - Social media
-        - Removable media (The autorun from Windows, I have seen too many.)
+        - Removable media (The auto run from Windows, I have seen too many.)
         - Cloud
     - Risk: the potential impact or the likelihood of an attack, threat,
       vulnerability.

@@ -7,6 +7,13 @@
   - [What matters to threat actors](#what-matters-to-threat-actors)
   - [Penetration testing](#penetration-testing)
   - [Penetration testing methodologies](#penetration-testing-methodologies)
+    - [Pre-engagement phase](#pre-engagement-phase)
+    - [Information gathering phase](#information-gathering-phase)
+    - [Threat modeling](#threat-modeling)
+    - [Vulnerability analysis](#vulnerability-analysis)
+    - [Exploitation](#exploitation)
+    - [Post-exploitation](#post-exploitation)
+    - [Report writing](#report-writing)
 <!--toc:end-->
 
 The author of this book is just teaching and writing books. He does not do

@@ -14,6 +14,7 @@
     - [Exploitation](#exploitation)
     - [Post-exploitation](#post-exploitation)
     - [Report writing](#report-writing)
+  - [Penetration testing approaches](#penetration-testing-approaches)
 <!--toc:end-->
 
 The author of this book is just teaching and writing books. He does not do

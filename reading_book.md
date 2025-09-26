@@ -36,3 +36,30 @@ real works. I am getting a hard time convince myself to read.
 
 (I just notice that the author is using a lot of empty words. We can remove a
 bunch of paragraphs without losing any meaning.)
+
+## Threat actors
+
+Script kiddie: Someone who does not fully understand the technical details of
+cybersecurity to perform or develop a threat on their own. They are not
+harmless, by following instructions, tutorials from malicious real hackers,
+they can do equal harm or even worse.
+
+Cyber terrorist: They target societies, they have ideological goals.
+
+Hacktivist: (Reminds me of the 'V for Vendetta' movie.)
+
+Insider: (Intel chipset has hardware-based back-doors, from Intel.)
+
+State-sponsored: (Oh, China) The author is using fancy words again to describe
+the basic concept that has existed through the whole history, **spy**. I am
+laughing: reconnaissance, intelligence gathering.
+
+Organized crime: Crime organizations are groups of expert people or have
+specialized skill set, like a lawyer. With this level of efforts and resources,
+their goals are big.
+
+Black hat: Malicious goals.
+
+White hat: Help people.
+
+Gray hat: (Mr. Robot)

@@ -17,6 +17,12 @@
       - [Report writing](#report-writing)
     - [Penetration testing approaches](#penetration-testing-approaches)
     - [Types of penetration testing](#types-of-penetration-testing)
+    - [Phases of penetration testing](#phases-of-penetration-testing)
+      - [Reconnaissance](#reconnaissance)
+      - [Scanning and enumeration](#scanning-and-enumeration)
+      - [Gaining access (exploitation)](#gaining-access-exploitation)
+      - [Maintaining access](#maintaining-access)
+      - [Covering your tracks](#covering-your-tracks)
 <!--toc:end-->
 
 The author of this book is just teaching and writing books. He does not do
@@ -204,3 +210,52 @@ name then create a acronym for it.)
 - Network (external & internal)
 - Cloud
 - Physical
+
+### Phases of penetration testing
+
+#### Reconnaissance
+
+Information gathering. The collected information is analyzed to build profile
+about the targeted system. This helps develop/acquire specific exploits
+suitable for the targeted systems.
+
+Techniques:
+- Use search engine
+- Social networking platforms
+- Perform google hacking techniques (What is this?)
+- Perform DNS interrogration
+- Social engineering
+
+#### Scanning and enumeration
+
+Improve the profile of the target.
+
+Techniques:
+- Host discovery
+- Check firewalls, rules
+- Check open ports, running services
+- Check security vulnerabilities
+- Create network topology of the target network
+
+#### Gaining access (exploitation)
+
+Based on information built from previous phases, threat actor craft or acquire
+exploits from online sources that is designed to compromise the target.
+
+Actions when access is gained:
+- Retrieving and cracking passwords.
+- Escalating previleges.
+- Transferring additional payloads, malwares.
+
+#### Maintaining access
+
+Objectives:
+- Lateral movement
+- Exfiltration of data (What is this fancy word? It is not even exist in the
+  oald - a dictionary.)
+- Creating backdoors and persistent connections
+
+#### Covering your tracks
+
+Don't leave traces, don't trigger alerts, remove residual traces. Penetration
+test is designed to be stealthy to simulate real-world attacks.

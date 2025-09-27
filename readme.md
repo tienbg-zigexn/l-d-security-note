@@ -34,6 +34,10 @@ tools useful for hackers.
 
 The Metasploitable is a vulnerable linux distro, so this is another victim.
 
+This course suggests using VMware, which is bad. I have disliked this product
+for a pretty long time. I don't want to explain why here. I just state that I
+will use VirtualBox, at least. At best I would use something like kvm, qemu.
+
 ## On warp terminal
 
 I hate the fact that this course suggests using this terminal emulator. The

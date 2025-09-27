@@ -31,6 +31,7 @@
       - [Installation](#installation)
       - [Command and control](#command-and-control)
       - [Actions on Objectives](#actions-on-objectives)
+  - [Chapter 2: Bulding a Penetration Testing Lab](#chapter-2-bulding-a-penetration-testing-lab)
 <!--toc:end-->
 
 The author of this book is just teaching and writing books. He does not do
@@ -335,3 +336,19 @@ organization's blue team has failed.
 
 Stopping them now will be really difficult since they have already implemented
 multiple backboors with encrypted C2 communications.
+
+## Chapter 2: Bulding a Penetration Testing Lab
+
+- Setup hypervisor (VirtualBox)
+    - also install the extention to have isolated networks feature.
+- Create virtually isolated networks
+    - use `vboxmanage` (cli, oh yeah)
+    - (this guide is pretty inconsistent. I am disappointing again. Both
+      PentestNet and HiddenNet has --lower-ip=x.x.x.20 and --upper-ip=x.x.x.50
+      but the range for machines connected to these networks are different? One
+      is 1-254, and the other is 1-20. I think both are wrong.)
+    - The RedTeamLab have `--set-opt` to set DNS.
+    - (The author does not explain any of these parameters, learners will have
+      to depend on themself.)
+- Setup Kali linux
+    - Part 1: deploy as a vm

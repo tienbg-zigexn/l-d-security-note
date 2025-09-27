@@ -80,3 +80,6 @@ Containers      17        0         368.9MB   368.9MB (100%)
 Local Volumes   15        15        71.02GB   0B (0%)
 Build Cache     222       0         6.605GB   6.605GB
 ```
+
+I have no choice. I have to use my spare personal machine to install these VMs
+and practice. Should I request more storage?

@@ -12,23 +12,36 @@
       - [Information gathering phase](#information-gathering-phase)
       - [Threat modeling](#threat-modeling)
       - [Vulnerability analysis](#vulnerability-analysis)
-      - [Exploitation](#exploitation)
+      - [Exploitation _pt](#exploitation-pt)
       - [Post-exploitation](#post-exploitation)
       - [Report writing](#report-writing)
     - [Penetration testing approaches](#penetration-testing-approaches)
     - [Types of penetration testing](#types-of-penetration-testing)
     - [Phases of penetration testing](#phases-of-penetration-testing)
-      - [Reconnaissance](#reconnaissance)
+      - [Reconnaissance _pt](#reconnaissance-pt)
       - [Scanning and enumeration](#scanning-and-enumeration)
       - [Gaining access (exploitation)](#gaining-access-exploitation)
       - [Maintaining access](#maintaining-access)
       - [Covering your tracks](#covering-your-tracks)
+    - [Cyber Kill Chain framework](#cyber-kill-chain-framework)
+      - [Reconnaissance _ckc](#reconnaissance-ckc)
+      - [Weaponization](#weaponization)
+      - [Delivery](#delivery)
+      - [Exploitation _ckc](#exploitation-ckc)
+      - [Installation](#installation)
+      - [Command and control](#command-and-control)
+      - [Actions on Objectives](#actions-on-objectives)
 <!--toc:end-->
 
 The author of this book is just teaching and writing books. He does not do
 real works. I am getting a hard time convince myself to read.
 
 I read the third edition by the way, not the second.
+
+<!--
+I think that reading the stories of criminals is way more interesting than this
+book.
+-->
 
 ## Chapter 1: Introduction to Ethical Hacking
 
@@ -159,7 +172,7 @@ manually.
 
 Analysis helps decision-makers determine priorities.
 
-#### Exploitation
+#### Exploitation _pt
 
 <!-- Haiz, this start to feel like homeworks. -->
 <!-- Writing is fine, I love writing, but I also love to write what I want to
@@ -213,7 +226,7 @@ name then create a acronym for it.)
 
 ### Phases of penetration testing
 
-#### Reconnaissance
+#### Reconnaissance _pt
 
 Information gathering. The collected information is analyzed to build profile
 about the targeted system. This helps develop/acquire specific exploits
@@ -259,3 +272,66 @@ Objectives:
 
 Don't leave traces, don't trigger alerts, remove residual traces. Penetration
 test is designed to be stealthy to simulate real-world attacks.
+
+### Cyber Kill Chain framework
+
+Seven stages framework developed by Lockheed Martin. Used by red team.
+
+    Reconnaissance
+    Weaponization
+    Delivery
+    Expoitation
+    Installation
+    Command & Control (C2)
+    Actions on Objectives
+
+#### Reconnaissance _ckc
+
+<!--
+Biết người biết ta, trăm trận trăm thắng. Hoặc là thua nhẹ nhàng thui :v
+-->
+
+Red team does not have time constraint like blue team. They can spend way more
+time develop profile about a target and have detailed plans.
+
+#### Weaponization
+
+The weapon (exploit) is specially crafted, tested to ensure successful when
+launched.
+
+Threat actors will couple their exploit with additional payloads. They payload
+is unleashed after the exploit compromized the system. (Create persistent
+backdoors for example.)
+
+#### Delivery
+
+Threat actor now have to deliver the weapon onto the targeted system.
+
+Creative mindset, email, messages. Create multiple USB drives and drop them
+near the target. (There is a scene in Mr Robot where Eliot's sister drops bunch
+of USB drives and one of the guard plugged into his work laptop.)
+
+#### Exploitation _ckc
+
+(Why is this section, what for? The paragraph has no meaning. Is this just here
+for confusion?)
+
+The attacker needs to ensure the successful when execute the exploit or else
+CKC halt here. (Of course, mother fucker)
+
+#### Installation
+
+After exploited, the attack will attempt to create multiple persistent backdoor
+accesses.
+
+#### Command and control
+
+Build a C2 server to control a group of infected systems.
+
+#### Actions on Objectives
+
+Threat actor or penetration tester is able to reach this state means the
+organization's blue team has failed.
+
+Stopping them now will be really difficult since they have already implemented
+multiple backboors with encrypted C2 communications.

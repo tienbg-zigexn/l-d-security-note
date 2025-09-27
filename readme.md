@@ -87,3 +87,7 @@ Build Cache     222       0         6.605GB   6.605GB
 
 I have no choice. I have to use my spare personal machine to install these VMs
 and practice. Should I request more storage?
+
+No wait, my personal laptop would not have enough ram. I hate this course. 1GiB
+for kali, 1GiB for metasploitable, 4GiB for the windows, then I have 2 left to
+struggle. I want to quit.

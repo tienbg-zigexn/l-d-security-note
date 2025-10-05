@@ -85,9 +85,56 @@ Local Volumes   15        15        71.02GB   0B (0%)
 Build Cache     222       0         6.605GB   6.605GB
 ```
 
-I have no choice. I have to use my spare personal machine to install these VMs
-and practice. Should I request more storage?
+## Website hacking - information gathering
 
-No wait, my personal laptop would not have enough ram. I hate this course. 1GiB
-for kali, 1GiB for metasploitable, 4GiB for the windows, then I have 2 left to
-struggle. I want to quit.
+The first step of every hack always is building a profile about the target, I
+mean gathering information.
+
+Common for website hacking:
+
+    IP Address
+    Domain name info
+    Technologies used
+    Other websites on the same server
+    DNS records
+    Unlisted files, sub-domains, directories
+
+The instructor suggests tools for gathering information, such as:
+
+    whois.domaintools.com
+    toolbar.netcraft.com
+    robtex.com
+
+The problem with these tools is they are online services. They can track our
+activities and we are depending on the internet, on someone else's computers
+(servers running those services).
+
+I don't really have the expertise on this field but I know there are many tools
+that is safer to use. We have some network cli FOSS tools that do not depends
+on someone else's server `whois`, `dig`, etc.
+
+I think the only reason we could use these online tools is because we are doing
+white hat activities here. But to simulate a real APT, I think we should not.
+
+It is weird that whois tool has the web server information (verion of apache).
+I could not reproduce this, even using the same website in the video.
+
+The privacy situation is way better now since all the hosting history
+information is gone (from these tools).
+
+`exploit-db.com` is a good resource about exploiting CVEs.
+
+`robtex.com` helps gather information about DNS. We can use the reverse DNS to
+gather information about other websites that are hosted on the same server.
+
+We can even use search engine like `bing` to search websites that point to the
+same ip address.
+
+Discovering Subdomains: we have the `knockpy` tool (pre-installed on kali
+linux). This tool has 2 methods:
+- `--recon`: use DNS records.
+- `--bruteforce`: use word list and bruteforce checking.
+
+Discovering Sensitive Files: we have the `dirb` tool (also pre-installed on
+kali linux). This tool uses bruteforce with wordlist. Which means it's just for
+convenient.

@@ -9,6 +9,7 @@
   - [Hard disk problems](#hard-disk-problems)
   - [Website hacking - information gathering](#website-hacking-information-gathering)
   - [Website hacking - Files](#website-hacking-files)
+  - [Website hacking - SQL injection](#website-hacking-sql-injection)
 <!--toc:end-->
 
 ## Other notes
@@ -159,3 +160,28 @@ current app.
 
 Remote file inclusion: the target website can sometimes load remote files as
 well. This behavior makes them terribly vulnerable.
+
+## Website hacking - SQL injection
+
+Most applications are just CRUD apps that interact with databases. So SQL
+injection is a pretty serious problem.
+
+To discover SQL injection vulnerabilities, we would manipulate those inputs of
+forms, inspect the errors, testing.
+
+We could try to first input valid sql in those inputs and see if it runs
+successfully.
+
+After aquired a SQL vulnerability, we can pretty much do almost anything we
+want with the target's database.
+
+In SQL we have the function `load_file()`. I did not know this, interesting. We
+can even create files `into outfile '/var/www/someapp/dangerous.txt'`
+
+Tool: `sqlmap` - Automatic SQL injection and database takeover tool.
+
+This tool supports many SQL injection techniques and all database management
+systems I could think of.
+
+How to prevent SQL injection: parameterized (`select... ?, argument`) ->
+separate data from sql code.

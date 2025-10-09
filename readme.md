@@ -7,6 +7,8 @@
   - [Hacking lab](#hacking-lab)
   - [On warp terminal](#on-warp-terminal)
   - [Hard disk problems](#hard-disk-problems)
+  - [Website hacking - information gathering](#website-hacking-information-gathering)
+  - [Website hacking - Files](#website-hacking-files)
 <!--toc:end-->
 
 ## Other notes
@@ -138,3 +140,22 @@ linux). This tool has 2 methods:
 Discovering Sensitive Files: we have the `dirb` tool (also pre-installed on
 kali linux). This tool uses bruteforce with wordlist. Which means it's just for
 convenient.
+
+## Website hacking - Files
+
+File uploading: we can upload execution files on a server (ex: php shell). We
+have tools for generating these scripts. One of them is `weevely`.
+
+`weevely` generated script is really powerful, if success, we can implant
+backdoors easily.
+
+Remote code execution: if we managed to run code on a server (ex: through
+insecure input), we can plant tcp backdoor using tools like `nc`, python's
+`socket`, ruby's `TCPSocket`, or perl, php equivalents, etc.
+
+File inclusion: if a website has the ability to load other files on the system,
+we can take advantages of this to load other important files outside of the
+current app.
+
+Remote file inclusion: the target website can sometimes load remote files as
+well. This behavior makes them terribly vulnerable.

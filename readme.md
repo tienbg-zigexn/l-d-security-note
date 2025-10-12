@@ -215,3 +215,14 @@ target (or the company) and their representatives' information.
     - Engagement summary: scope, risks, findings overview, still for low-tech
       people.
     - Legal section: you don't do this yourself.
+
+## OWASP top ten
+
+The Open Worldwide Application Security Project:
+A nonprofit foundation, this organization provides The OWASP Top 10, which is a
+standard awareness document for developers and web application security.
+
+They update this data every few years, I guess.
+
+They seem legit, since many security courses, instructors, even professors from
+HUST mention this site.

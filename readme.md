@@ -211,11 +211,12 @@ GUI, pretty convenient for pentesters, attackers.
 Writing pentest report: This should has its own section, but meh. The report's
 first page should contains: title, date, version, pentester(s) information,
 target (or the company) and their representatives' information.
-    Also:
-    - Executive summary: for low-tech people to understand.
-    - Engagement summary: scope, risks, findings overview, still for low-tech
-      people.
-    - Legal section: you don't do this yourself.
+
+Also:
+- Executive summary: for low-tech people to understand.
+- Engagement summary: scope, risks, findings overview, still for low-tech
+  people.
+- Legal section: you don't do this yourself.
 
 ## OWASP top ten
 

@@ -228,3 +228,8 @@ They update this data every few years, I guess.
 
 They seem legit, since many security courses, instructors, even professors from
 HUST mention this site.
+
+## Network hacking
+
+We need a wireless adapter to gain access to a WiFi. The wireless adapter
+requires supporting monitor mode; packet injection; ap mode.

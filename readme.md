@@ -13,6 +13,7 @@
   - [Website hacking - Cross site scripting (XSS)](#website-hacking-cross-site-scripting-xss)
   - [Website hacking - Discorver vulnerabilities automatically](#website-hacking-discorver-vulnerabilities-automatically)
   - [OWASP top ten](#owasp-top-ten)
+  - [Network hacking](#network-hacking)
 <!--toc:end-->
 
 ## Other notes
@@ -233,3 +234,37 @@ HUST mention this site.
 
 We need a wireless adapter to gain access to a WiFi. The wireless adapter
 requires supporting monitor mode; packet injection; ap mode.
+
+We can passthrough a device to the virtual machine through USB, which means
+skipping the host. This is a cool concept, I've already learned a bit about
+this because I want to passthough my GPU in the past to play video games.
+
+MAC (Media Access Control) Address: This value is assigned to each devices by
+the manufacturer. It is: permanent; physical; unique. This value contains
+information about the manufacturer, production batch, etc.
+
+The course says MAC addresses are permanent, but as my experience, not really.
+My router have spoof MAC feature, even my phone can spoof MAC. So using these
+values to identify devices is not really reliable.
+
+As a privay advocater, I turned on these spoofing features all the time, so for
+example a coffee's WiFi network could not track how frequently I go to their
+shop. 
+
+This course actually shows how to change the MAC address using `ifconfig`. The
+goal is to increase anonymity.
+Steps are:
+1. Disable a network interface `ifconfig <interface> down`.
+2. Change hardware address (MAC) `ifconfig <interface> hw ether <MAC address>`.
+3. Enable back the interface `ifconfig <interface> up`.
+
+To intercept packages sending to others devices, we would change the
+`Mode:Managed` of our device into `Mode:Monitor`.
+Steps are:
+1. Disable a network interface `ifconfig <interface> down`.
+2. Change mode `iwconfig <interface> mode monitor`.
+3. Enable back the interface `ifconfig <interface> up`.
+
+Note: On my Ubuntu Plucky, the package or command to manage WiFi interface is
+actually called `iw` (newer version, I think). And instead of `mode`, it's
+called `type`.

@@ -247,9 +247,9 @@ The course says MAC addresses are permanent, but as my experience, not really.
 My router have spoof MAC feature, even my phone can spoof MAC. So using these
 values to identify devices is not really reliable.
 
-As a privay advocater, I turned on these spoofing features all the time, so for
-example a coffee's WiFi network could not track how frequently I go to their
-shop. 
+As a privacy advocater, I turned on these spoofing features all the time, so
+for example a coffee's WiFi network could not track how frequently I go to
+their shop. 
 
 This course actually shows how to change the MAC address using `ifconfig`. The
 goal is to increase anonymity.

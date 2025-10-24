@@ -268,3 +268,5 @@ Steps are:
 Note: On my Ubuntu Plucky, the package or command to manage WiFi interface is
 actually called `iw` (newer version, I think). And instead of `mode`, it's
 called `type`.
+
+![iw command](./assets/type_managed.png)

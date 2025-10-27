@@ -14,6 +14,7 @@
   - [Website hacking - Discorver vulnerabilities automatically](#website-hacking-discorver-vulnerabilities-automatically)
   - [OWASP top ten](#owasp-top-ten)
   - [Network hacking](#network-hacking)
+  - [Network hacking - preconnection attacks](#network-hacking-preconnection-attacks)
 <!--toc:end-->
 
 ## Other notes
@@ -270,3 +271,33 @@ actually called `iw` (newer version, I think). And instead of `mode`, it's
 called `type`.
 
 ![iw command](./assets/type_managed.png)
+
+## Network hacking - preconnection attacks
+
+Packet sniffing: we have `airodump-ng` tool that can capture packets, display
+detailed info about networks around us, connected clients, etc. This is a part
+of `aircrack-ng` suite.
+
+We have 2 standard WiFi bands: 2.4Ghz and 5Ghz.
+Low-level names:
+
+    **a** => 5Ghz
+    **b, g** => 2.4Ghz
+    **ac** => below 6Ghz
+
+Example: scan both 2.4Ghz and 5Ghz:
+
+```bash
+airodump-ng --band abg <interface>
+```
+
+Why not always or default to scan all bands? Because of the efficiency,
+scanning more bands mean using more resources to scan, which means slower and
+some adapters are not strong enough.
+
+![Turn on Monitor mode](./assets/set_monitor_mode_wifi_adapter.png)
+
+![Try airodump-ng](./assets/try_out_airodump.png)
+
+We can discover devices connecting to a network and capture every packages sent
+in the network.

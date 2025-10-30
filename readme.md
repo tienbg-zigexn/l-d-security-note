@@ -15,6 +15,7 @@
   - [OWASP top ten](#owasp-top-ten)
   - [Network hacking](#network-hacking)
   - [Network hacking - preconnection attacks](#network-hacking-preconnection-attacks)
+  - [Network hacking - gaining access](#network-hacking-gaining-access)
 <!--toc:end-->
 
 ## Other notes
@@ -301,3 +302,41 @@ some adapters are not strong enough.
 
 We can discover devices connecting to a network and capture every packages sent
 in the network.
+
+We can use `aireplay-ng` to de-auth a device from a network using flag
+`--deauth`.
+
+## Network hacking - gaining access
+
+**WEP cracking:** This is pretty interesting since I have known about these
+WiFi encription algorithms for a pretty long time but never dig into them deep
+enough.
+
+WEP encryption uses RC4 algorithm, there is nothing wrong with this algorithm,
+the problem is how WEP implement it.
+
+Each package is encrypted using a unique key stream. This key stream is
+generated every time for every package. WEP uses a initialization vector (IV)
+to do this. This IV plus password, and we have a key stream.
+
+The IV is only 24 bits long and is sent over the air in `plain text`. Yes,
+plain text.
+
+On busy network, we can have repeated IVs. These repeated IVs with their
+encrypted packages will help attackers determine the key stream. Attackers can
+use a statistical attack here. The same data with the same key will create the
+same encrypted.
+
+**Step to crack WEP:**
+1. Capture a large number of IVs/packages. => `airodump-ng`
+    - Even when the network is not busy (the data being transfer is infrequent
+      so we would have to wait more to get enough IVs to crack the network), we
+      can **force the AP** (access point) to generate IVs.
+2. Analyse and crack the key. (This can be done automatically, we have tool for
+   this) => `aircrack-ng`
+
+I really want to buy a portable router and tempering with all the networks
+around me.
+
+- Fake authentication attack: `aireplay-ng --fakeauth`
+- ARP request replay attack: `aireplay-ng --arpreplay`

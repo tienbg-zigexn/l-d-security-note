@@ -15,7 +15,8 @@
   - [OWASP top ten](#owasp-top-ten)
   - [Network hacking](#network-hacking)
   - [Network hacking - preconnection attacks](#network-hacking-preconnection-attacks)
-  - [Network hacking - gaining access](#network-hacking-gaining-access)
+  - [Network hacking - WEP cracking](#network-hacking-wep-cracking)
+  - [Network hacking - WPA/WPA2 cracking](#network-hacking-wpawpa2-cracking)
 <!--toc:end-->
 
 ## Other notes
@@ -306,7 +307,7 @@ in the network.
 We can use `aireplay-ng` to de-auth a device from a network using flag
 `--deauth`.
 
-## Network hacking - gaining access
+## Network hacking - WEP cracking
 
 **WEP cracking:** This is pretty interesting since I have known about these
 WiFi encription algorithms for a pretty long time but never dig into them deep
@@ -340,3 +341,5 @@ around me.
 
 - Fake authentication attack: `aireplay-ng --fakeauth`
 - ARP request replay attack: `aireplay-ng --arpreplay`
+
+## Network hacking - WPA/WPA2 cracking

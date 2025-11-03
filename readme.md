@@ -70,30 +70,26 @@ install these VMs. The Windows 11 requires at least 64GiB. I only have total
 
     df -h
 
-```
-Filesystem      Size  Used Avail Use% Mounted on
-tmpfs           1.6G  2.0M  1.6G   1% /run
-efivarfs        374K  239K  131K  65% /sys/firmware/efi/efivars
-/dev/nvme0n1p2  233G  172G   50G  78% /
-tmpfs           7.7G  1.9M  7.7G   1% /dev/shm
-tmpfs           5.0M  8.0K  5.0M   1% /run/lock
-tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
-tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
-tmpfs           7.7G   64K  7.7G   1% /tmp
-/dev/nvme0n1p1  1.1G   22M  1.1G   3% /boot/efi
-tmpfs           1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
-tmpfs           1.6G   72K  1.6G   1% /run/user/1000
-```
+    Filesystem      Size  Used Avail Use% Mounted on
+    tmpfs           1.6G  2.0M  1.6G   1% /run
+    efivarfs        374K  239K  131K  65% /sys/firmware/efi/efivars
+    /dev/nvme0n1p2  233G  172G   50G  78% /
+    tmpfs           7.7G  1.9M  7.7G   1% /dev/shm
+    tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+    tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+    tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+    tmpfs           7.7G   64K  7.7G   1% /tmp
+    /dev/nvme0n1p1  1.1G   22M  1.1G   3% /boot/efi
+    tmpfs           1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+    tmpfs           1.6G   72K  1.6G   1% /run/user/1000
 
     docker system df
 
-```
-TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
-Images          17        14        8.764GB   3.591GB (40%)
-Containers      17        0         368.9MB   368.9MB (100%)
-Local Volumes   15        15        71.02GB   0B (0%)
-Build Cache     222       0         6.605GB   6.605GB
-```
+    TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
+    Images          17        14        8.764GB   3.591GB (40%)
+    Containers      17        0         368.9MB   368.9MB (100%)
+    Local Volumes   15        15        71.02GB   0B (0%)
+    Build Cache     222       0         6.605GB   6.605GB
 
 ## Website hacking - information gathering
 
@@ -142,6 +138,7 @@ same ip address.
 
 Discovering Subdomains: we have the `knockpy` tool (pre-installed on kali
 linux). This tool has 2 methods:
+
 - `--recon`: use DNS records.
 - `--bruteforce`: use word list and bruteforce checking.
 
@@ -217,6 +214,7 @@ first page should contains: title, date, version, pentester(s) information,
 target (or the company) and their representatives' information.
 
 Also:
+
 - Executive summary: for low-tech people to understand.
 - Engagement summary: scope, risks, findings overview, still for low-tech
   people.
@@ -252,11 +250,12 @@ values to identify devices is not really reliable.
 
 As a privacy advocater, I turned on these spoofing features all the time, so
 for example a coffee's WiFi network could not track how frequently I go to
-their shop. 
+their shop.
 
 This course actually shows how to change the MAC address using `ifconfig`. The
 goal is to increase anonymity.
 Steps are:
+
 1. Disable a network interface `ifconfig <interface> down`.
 2. Change hardware address (MAC) `ifconfig <interface> hw ether <MAC address>`.
 3. Enable back the interface `ifconfig <interface> up`.
@@ -264,6 +263,7 @@ Steps are:
 To intercept packages sending to others devices, we would change the
 `Mode:Managed` of our device into `Mode:Monitor`.
 Steps are:
+
 1. Disable a network interface `ifconfig <interface> down`.
 2. Change mode `iwconfig <interface> mode monitor`.
 3. Enable back the interface `ifconfig <interface> up`.
@@ -329,6 +329,7 @@ use a statistical attack here. The same data with the same key will create the
 same encrypted.
 
 **Step to crack WEP:**
+
 1. Capture a large number of IVs/packages. => `airodump-ng`
     - Even when the network is not busy (the data being transfer is infrequent
       so we would have to wait more to get enough IVs to crack the network), we

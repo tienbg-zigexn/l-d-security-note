@@ -344,3 +344,34 @@ around me.
 - ARP request replay attack: `aireplay-ng --arpreplay`
 
 ## Network hacking - WPA/WPA2 cracking
+
+WPA/WPA2 was made to address the issues with WEP.
+
+WPS (Wi‑Fi Protected Setup) is a feature that can be used with WPA/WPA2 and it
+is a weakness. It is designed to let clients connect to the network without
+entering the password. The goal is the convenient, ease of setup. Yes we all
+have to sacrify something for conveniences. Because of the ease of setup in
+mind, the authentication is only using 8 digit pins. But if configured
+correctly (turn on the PBC - Push button authentication), this would not be an
+issue anymore, because user will have to press the WPS button on the router for
+it to accepts new device.
+
+1. Brute force to get WPS pin.
+2. Use the pin to compute the actual password.
+
+New tool to brute force WPS pin: `reaver`.
+
+We still using the `aireplay-ng --fakeauth` to keep connection with the target.
+
+We need to capture the handshake packages. To do this, we can force a handshake
+by disconnect a client from the network and they will be reconnected, and we
+got our handshake packages. `aireplay-ng --deauth 4`, 4 means very short amount
+of time (4 packages).
+
+This handshake packages, they don't have the information to recover the key.
+They do contain the data to verify if a key is valid or not. Which means we can
+brute force or use dictionary attack.
+
+To generate wordlists, we can use `crunch`.
+
+![using crunch](./assets/crunch.png)

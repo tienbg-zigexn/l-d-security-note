@@ -289,9 +289,9 @@ Low-level names:
 
 Example: scan both 2.4Ghz and 5Ghz:
 
-```bash
-airodump-ng --band abg <interface>
-```
+    ```bash
+    airodump-ng --band abg <interface>
+    ```
 
 Why not always or default to scan all bands? Because of the efficiency,
 scanning more bands mean using more resources to scan, which means slower and
@@ -375,3 +375,33 @@ brute force or use dictionary attack.
 To generate wordlists, we can use `crunch`.
 
 ![using crunch](./assets/crunch.png)
+
+Start cracking:
+
+    ```sh
+    aircrack-ng <handshake> -w <wordlist>
+    ```
+
+We can optimize more by using GPU for example. There are also services to
+do the cracking for us. They have powerful machines and good wordlists. We can
+search online for them.
+
+## Network hacking - security
+
+**How to prevent these attacks:**
+
+- Don't use WEP
+- Use strong password with WPA2
+- Disable WPS
+
+We can use `ip route` to identify the gateway to access router settings. Damn,
+I was always using the `ip -br a` to see the ip and guess the gateway. Why did
+I never search for an efficient way to identify the gateway?
+
+Most of public (coffee store like Highland) WiFis have some soft of
+login/authentication pages. I sometimes have a hard time access those pages.
+But now I have a way to quickly identify the gateway, I can just type the
+gateway into a browser and then get redirect to the login pages. Yay!
+
+The workaround way I have been using is to try access common pages like
+`google.com` and I will get redirected to those login pages.

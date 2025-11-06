@@ -344,7 +344,8 @@ I really want to buy a portable router and tempering with all the networks
 around me.
 
 - Fake authentication attack: `aireplay-ng --fakeauth`
-- ARP request replay attack: `aireplay-ng --arpreplay`
+- ARP (Address Resolution Protocol) request replay attack: `aireplay-ng
+  --arpreplay`
 
 ## Network hacking - WPA/WPA2 cracking
 

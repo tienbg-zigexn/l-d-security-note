@@ -18,6 +18,8 @@
   - [Network hacking - WEP cracking](#network-hacking-wep-cracking)
   - [Network hacking - WPA/WPA2 cracking](#network-hacking-wpawpa2-cracking)
   - [Network hacking - security](#network-hacking-security)
+  - [Network hacking - post connection attacks - information gathering](#network-hacking-post-connection-attacks-information-gathering)
+  - [Network hacking - post connection attacks - MITM attacks](#network-hacking-post-connection-attacks-mitm-attacks)
 <!--toc:end-->
 
 ## Other notes
@@ -406,3 +408,12 @@ gateway into a browser and then get redirect to the login pages. Yay!
 
 The workaround way I have been using is to try access common pages like
 `google.com` and I will get redirected to those login pages.
+
+## Network hacking - post connection attacks - information gathering
+
+We have `netdiscover` to discover the information about devices in the network.
+
+For more advanced informations, we would use `nmap` instead. It has a GUI
+called `zenmap`. It even has some predefined profiles for ease.
+
+## Network hacking - post connection attacks - MITM attacks

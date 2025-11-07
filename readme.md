@@ -468,3 +468,20 @@ syntax. The tools can be replaced but the concepts remain. The method is to
 downgrade HTTPS requests into HTTP requests. How? He does not tell. Some
 websites use HSTS (HTTP Strict-Transport-Security) header to tell the browser
 to always use HTTPS, so we could not downgrade to HTTP with these websites.
+
+We can also bypass HSTS by changing the domain, for example: `facebook.com` ->
+`facebook.corn`. `bettercap` can do this. If target types directly into the
+address bar `facebook.com` then this will not work. Bettercap changes this by
+tampering with the response of other sites, like Google search for example.
+
+Using `bettercap` we can **Spoof DNS** as well.
+
+![bettercap dns spoof](./assets/bettercap_dnsspoof.png)
+
+**Injecting javascript code:** As we can tamper with the request/response, then
+we can inject javascript code. By adding more files to the payloads for
+example.
+
+Bettercap has GUI as well. You are trying to be like a real hacker, why the
+inefficient GUI? To be good at security you should never be afraid of using a
+CLI tool, or live in the terminal.

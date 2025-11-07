@@ -71,28 +71,36 @@ After rebuild my database my machine still does not have enough spaces left to
 install these VMs. The Windows 11 requires at least 64GiB. I only have total
 50GiB left.
 
-    df -h
+```sh
+df -h
+```
 
-    Filesystem      Size  Used Avail Use% Mounted on
-    tmpfs           1.6G  2.0M  1.6G   1% /run
-    efivarfs        374K  239K  131K  65% /sys/firmware/efi/efivars
-    /dev/nvme0n1p2  233G  172G   50G  78% /
-    tmpfs           7.7G  1.9M  7.7G   1% /dev/shm
-    tmpfs           5.0M  8.0K  5.0M   1% /run/lock
-    tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
-    tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
-    tmpfs           7.7G   64K  7.7G   1% /tmp
-    /dev/nvme0n1p1  1.1G   22M  1.1G   3% /boot/efi
-    tmpfs           1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
-    tmpfs           1.6G   72K  1.6G   1% /run/user/1000
+```plaintext
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           1.6G  2.0M  1.6G   1% /run
+efivarfs        374K  239K  131K  65% /sys/firmware/efi/efivars
+/dev/nvme0n1p2  233G  172G   50G  78% /
+tmpfs           7.7G  1.9M  7.7G   1% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+tmpfs           7.7G   64K  7.7G   1% /tmp
+/dev/nvme0n1p1  1.1G   22M  1.1G   3% /boot/efi
+tmpfs           1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           1.6G   72K  1.6G   1% /run/user/1000
+```
 
-    docker system df
+```sh
+docker system df
+```
 
-    TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
-    Images          17        14        8.764GB   3.591GB (40%)
-    Containers      17        0         368.9MB   368.9MB (100%)
-    Local Volumes   15        15        71.02GB   0B (0%)
-    Build Cache     222       0         6.605GB   6.605GB
+```plaintext
+TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
+Images          17        14        8.764GB   3.591GB (40%)
+Containers      17        0         368.9MB   368.9MB (100%)
+Local Volumes   15        15        71.02GB   0B (0%)
+Build Cache     222       0         6.605GB   6.605GB
+```
 
 ## Website hacking - information gathering
 
@@ -101,18 +109,22 @@ mean gathering information.
 
 Common for website hacking:
 
-    IP Address
-    Domain name info
-    Technologies used
-    Other websites on the same server
-    DNS records
-    Unlisted files, sub-domains, directories
+```plaintext
+IP Address
+Domain name info
+Technologies used
+Other websites on the same server
+DNS records
+Unlisted files, sub-domains, directories
+```
 
 The instructor suggests tools for gathering information, such as:
 
-    whois.domaintools.com
-    toolbar.netcraft.com
-    robtex.com
+```plaintext
+whois.domaintools.com
+toolbar.netcraft.com
+robtex.com
+```
 
 The problem with these tools is they are online services. They can track our
 activities and we are depending on the internet, on someone else's computers
@@ -286,15 +298,17 @@ of `aircrack-ng` suite.
 We have 2 standard WiFi bands: 2.4Ghz and 5Ghz.
 Low-level names:
 
-    **a** => 5Ghz
-    **b, g** => 2.4Ghz
-    **ac** => below 6Ghz
+```text
+**a** => 5Ghz
+**b, g** => 2.4Ghz
+**ac** => below 6Ghz
+```
 
 Example: scan both 2.4Ghz and 5Ghz:
 
-    ```bash
-    airodump-ng --band abg <interface>
-    ```
+```bash
+airodump-ng --band abg <interface>
+```
 
 Why not always or default to scan all bands? Because of the efficiency,
 scanning more bands mean using more resources to scan, which means slower and
@@ -382,9 +396,9 @@ To generate wordlists, we can use `crunch`.
 
 Start cracking:
 
-    ```sh
-    aircrack-ng <handshake> -w <wordlist>
-    ```
+```sh
+aircrack-ng <handshake> -w <wordlist>
+```
 
 We can optimize more by using GPU for example. There are also services to
 do the cracking for us. They have powerful machines and good wordlists. We can

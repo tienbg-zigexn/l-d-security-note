@@ -418,3 +418,21 @@ For more advanced informations, we would use `nmap` instead. It has a GUI
 called `zenmap`. It even has some predefined profiles for ease.
 
 ## Network hacking - post connection attacks - MITM attacks
+
+**ARP** is a table that maps IPs to MAC addresses. ARP is not secure, we can
+spoof it quite easy using `arpspoof`.
+
+By pretending to be the target to the AP and pretending to be the AP to the
+target, we are now the MITM (Man in the middle). To still provide internet
+access to the target we would need to enable `ip_forward`.
+
+Another tool that has more features and support arpspoofing is `bettercap`
+
+![bettercap help menu](./assets/bettercap_help.png)
+
+**Getting information:**
+![bettercap probing](./assets/bettercap_probing.png)
+
+**ARP spoofing attack:**
+![bettercap help spoof](./assets/bettercap_help_spoof.png)
+![bettercap arp spoof attack](./assets/bettercap_arpspoof_attack.png)

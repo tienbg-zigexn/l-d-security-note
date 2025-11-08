@@ -20,6 +20,8 @@
   - [Network hacking - security](#network-hacking-security)
   - [Network hacking - post connection attacks - information gathering](#network-hacking-post-connection-attacks-information-gathering)
   - [Network hacking - post connection attacks - MITM attacks](#network-hacking-post-connection-attacks-mitm-attacks)
+  - [Network hacking - detection and security](#network-hacking-detection-and-security)
+  - [I stopped](#i-stopped)
 <!--toc:end-->
 
 ## Other notes
@@ -491,3 +493,43 @@ capture, filter, search, etc. It also can read data captured from bettercap.
 
 An easy way to be the man in the middle is to host an access point yourself.
 Now you are the AP, you default is the MITM now.
+
+## Network hacking - detection and security
+
+We can detect suspicious network activities, like someone boardcasting a lot of
+requests to identify mac address of devices with current IP. Or we can see the
+changes in ARP table. We can use Wireshark to detect these or use specialized
+tools, like `Xarp`.
+
+Another solutions to prevent harm from MITM are to use VPN, enforce HTTPS by
+using plugin. A funny thing about VPN, from my personal perspective, if you're
+using a VPN service provided by some third parties, you are just shifting the
+trust from ISP to the VPN service. They are the MITM now. The VPN only works if
+you are the one in control. So most of the time, VPN is no better. Zero trust
+is always better than any trust at all.
+
+Some websites do not even support HTTPS, which is fine in my opinion if those
+websites don't require important information or any information at all, like
+some blogs, etc. There is a risk that a MITM can change the content. But this
+is a trade off, HTTPS is good but some users won't even be able to use this
+feature because of technical difficulties. For example, some users are still
+using a "dump" phone that does not support HTTPS, but can still access the
+internet.
+
+## I stopped
+
+I continuously get frustrated and disappointed in this course. I recommend
+anyone who wants to be better at security or anything like that to read the
+[darknetbible](https://darknetbible.info/) instead. And you should learn about
+OS, network, and low level concepts. Don't try to learn/remember the GUI
+buttons, steps, etc, they are and will change, they are inconsistent, buggy.
+Most of servers in the world are running on some kind of a linux os, learn the
+linux concepts. Even learning about the history of computer is pretty good.
+
+I believe there are good courses out there, but I still prefer reading good
+books, documentations or even stories about exploitations, criminals, CVEs
+instead. Or the knowledge from real criminals like the darknet bible.
+
+I'll keep watching all the other sections, just in case, but I won't try to
+take note to make evidence about my learning anymore. If I ever need to note
+something, I'll note it in my personal, private note space.

@@ -485,3 +485,9 @@ example.
 Bettercap has GUI as well. You are trying to be like a real hacker, why the
 inefficient GUI? To be good at security you should never be afraid of using a
 CLI tool, or live in the terminal.
+
+**Wireshark** is a tool that built specifically to analyze network data. We can
+capture, filter, search, etc. It also can read data captured from bettercap.
+
+An easy way to be the man in the middle is to host an access point yourself.
+Now you are the AP, you default is the MITM now.

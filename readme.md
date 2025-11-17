@@ -1,29 +1,5 @@
 # The security course from Zigexn L&D team
 
-<!--toc:start-->
-- [The security course from Zigexn L&D team](#the-security-course-from-zigexn-ld-team)
-  - [Other notes](#other-notes)
-  - [Structure](#structure)
-  - [Hacking lab](#hacking-lab)
-  - [On warp terminal](#on-warp-terminal)
-  - [Hard disk problems](#hard-disk-problems)
-  - [Website hacking - information gathering](#website-hacking-information-gathering)
-  - [Website hacking - Files](#website-hacking-files)
-  - [Website hacking - SQL injection](#website-hacking-sql-injection)
-  - [Website hacking - Cross site scripting (XSS)](#website-hacking-cross-site-scripting-xss)
-  - [Website hacking - Discorver vulnerabilities automatically](#website-hacking-discorver-vulnerabilities-automatically)
-  - [OWASP top ten](#owasp-top-ten)
-  - [Network hacking](#network-hacking)
-  - [Network hacking - preconnection attacks](#network-hacking-preconnection-attacks)
-  - [Network hacking - WEP cracking](#network-hacking-wep-cracking)
-  - [Network hacking - WPA/WPA2 cracking](#network-hacking-wpawpa2-cracking)
-  - [Network hacking - security](#network-hacking-security)
-  - [Network hacking - post connection attacks - information gathering](#network-hacking-post-connection-attacks-information-gathering)
-  - [Network hacking - post connection attacks - MITM attacks](#network-hacking-post-connection-attacks-mitm-attacks)
-  - [Network hacking - detection and security](#network-hacking-detection-and-security)
-  - [I stopped](#i-stopped)
-<!--toc:end-->
-
 ## Other notes
 
 [Note when reading the book](./reading_book.md)
@@ -516,7 +492,7 @@ feature because of technical difficulties. For example, some users are still
 using a "dump" phone that does not support HTTPS, but can still access the
 internet.
 
-## I stopped
+## ~I stopped~
 
 I continuously get frustrated and disappointed in this course. I recommend
 anyone who wants to be better at security or anything like that to read the

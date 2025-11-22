@@ -509,3 +509,33 @@ instead. Or the knowledge from real criminals like the darknet bible.
 I'll keep watching all the other sections, just in case, but I won't try to
 take note to make evidence about my learning anymore. If I ever need to note
 something, I'll note it in my personal, private note space.
+
+## Server side attack - Information gathering
+
+- Try default password.
+- Services might be mis-configured.
+- Some might contains a back door.
+- Code execution vulnerabilities.
+
+- Tools for automating scanning:
+  - Zenmap: This is a GUI for `nmap`. By using this tool we can quickly found
+    backdoor, vulnerabilities or misconfigurations that can be exploited.
+
+### Nexpose
+
+This is a vulnerability management framework. It can:
+
+- Discover open ports, running services.
+- Find vulnerabilities.
+- Find exploits
+- Verify them.
+- Generate reports.
+- Automate scans.
+
+This is a tool designed for enterpise. It requires many computer resources to
+run.
+
+This software creates a systemd service so it can runs every startup, which is
+not nice at all. We have to disable it.
+
+We have to give rapid7 our information to download and use this software.

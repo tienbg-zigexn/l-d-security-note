@@ -591,3 +591,13 @@ show options
 set option value
 exploit
 ```
+
+How AVs work (Anti-virus program) and the ways to bypass them:
+
+1. Static Analysis - compare code to known malware.
+    - We make the program **unique**.
+2. Dynamic Analysis - analyse behavior in a controlled environment.
+    - Add **safe** operations.
+    - **Delay** the payload.
+
+## Social engineering

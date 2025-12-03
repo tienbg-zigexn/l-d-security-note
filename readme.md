@@ -539,3 +539,55 @@ This software creates a systemd service so it can runs every startup, which is
 not nice at all. We have to disable it.
 
 We have to give rapid7 our information to download and use this software.
+
+## Client side attack - backdoors and payloads
+
+Backdoor is a program that provides remote control of a system.
+
+As payload, we can use `msfvenom` - industry standard.
+
+This utility has so many predefined payloads to use. `msfvenom --list
+payloads`.
+
+The name of payloads in this format: `Platform/Type/Communication`.
+  Ex: `windows/shell/reverse_http` - Work on windows platform, give us remote
+  shell.
+
+The communication part has 2 parts: direction and protocol.
+
+- direction:
+  - bind: hacker connects to target's open port.
+  - reverse: the backdoor program connects to our machine.
+- protocol:
+  - http(s)/tcp/udp
+
+This is just a naming convention, which means some payloads will not follow
+this convention.
+
+To list options of a payload:
+
+```console
+msfvenom --payload p/t/c --list-options
+```
+
+Not all options is required to create a backdoor.
+
+To create a backdoor:
+
+```console
+msfvenom --payload p/t/c OPTION1=VALUE1 --format exe --out executable.exe
+```
+
+To open a port in our machine:
+
+We have `msfconsole` and module `exploit/multi/handler` to exploit our
+backdoor.
+
+```console
+# in msfconsole
+use exploit/multi/handler
+
+show options
+set option value
+exploit
+```

@@ -284,7 +284,7 @@ Low-level names:
 
 Example: scan both 2.4Ghz and 5Ghz:
 
-```bash
+```sh
 airodump-ng --band abg <interface>
 ```
 
@@ -566,7 +566,7 @@ this convention.
 
 To list options of a payload:
 
-```console
+```sh
 msfvenom --payload p/t/c --list-options
 ```
 
@@ -574,7 +574,7 @@ Not all options is required to create a backdoor.
 
 To create a backdoor:
 
-```console
+```sh
 msfvenom --payload p/t/c OPTION1=VALUE1 --format exe --out executable.exe
 ```
 
@@ -583,7 +583,7 @@ To open a port in our machine:
 We have `msfconsole` and module `exploit/multi/handler` to exploit our
 backdoor.
 
-```console
+```sh
 # in msfconsole
 use exploit/multi/handler
 

@@ -601,3 +601,42 @@ How AVs work (Anti-virus program) and the ways to bypass them:
     - **Delay** the payload.
 
 ## Social engineering
+
+There is a tool to gather information about anything: `maltego`.
+
+This tool is powerful. It can searches information about a target from various
+sources automatically and quickly. We can even start by just search for a name.
+
+`Maltego` has native graph support to visualize information about targets,
+which is really really cool.
+
+**Trojans**: A method to add backdoor into different file types, mostly
+targeting PDFs, images, etc.
+
+We can use autoit to write scripts and compile them into executables.
+
+In order to spoofing file extensions we can use a special unicode character
+that named `right-to-left override`. It can turn `gpj.exe` into `exe.jpg` (only
+the look).
+
+**Email spoofing**:
+
+1. We can host a email server ourself
+2. Using a email service
+
+On client, we can use `sendmail` program to send emails.
+
+NOTE: we should set all the advanced options to make the emails look real
+(message-header, etc).
+
+This social engineering session explained why we should care about privacy.
+
+## BeEF framework
+
+**Browser Exploitation Framework**. I don't really understand the meaning of
+the lower `e`. Maybe `BEF` means something already so they choose this weird
+name.
+
+I have always prefered to disable javascript by default on my browser and only
+enable specific ones that I need (using uMatrix). After this session, I'll
+believe I have a clearer reasons for doing this.
